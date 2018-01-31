@@ -10,6 +10,8 @@
 		9A9079792022441100C380E9 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9079782022441100C380E9 /* Runner.cpp */; };
 		9A90797D2022444700C380E9 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797B2022444700C380E9 /* Controller.cpp */; };
 		9A9079812022473600C380E9 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797F2022473600C380E9 /* Timer.cpp */; };
+		9A90798420224DD100C380E9 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90798220224DD100C380E9 /* FileController.cpp */; };
+		9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90798A202253A800C380E9 /* CrimeData.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,11 @@
 		9A90797C2022444700C380E9 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		9A90797F2022473600C380E9 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		9A9079802022473600C380E9 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		9A90798220224DD100C380E9 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		9A90798320224DD100C380E9 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		9A9079892022531100C380E9 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		9A90798A202253A800C380E9 /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
+		9A90798B202253B300C380E9 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 		9A9079702022436800C380E9 /* DataInformation */ = {
 			isa = PBXGroup;
 			children = (
+				9A907985202252AF00C380E9 /* Data */,
 				9A9079782022441100C380E9 /* Runner.cpp */,
 				9A90797A2022441900C380E9 /* Controller */,
 			);
@@ -75,6 +83,8 @@
 				9A90797E202246BD00C380E9 /* Tools */,
 				9A90797B2022444700C380E9 /* Controller.cpp */,
 				9A90797C2022444700C380E9 /* Controller.hpp */,
+				9A90798220224DD100C380E9 /* FileController.cpp */,
+				9A90798320224DD100C380E9 /* FileController.hpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,6 +96,16 @@
 				9A9079802022473600C380E9 /* Timer.hpp */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		9A907985202252AF00C380E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A90798B202253B300C380E9 /* CrimeData.hpp */,
+				9A90798A202253A800C380E9 /* CrimeData.cpp */,
+				9A9079892022531100C380E9 /* crime.csv */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9079812022473600C380E9 /* Timer.cpp in Sources */,
+				9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */,
 				9A9079792022441100C380E9 /* Runner.cpp in Sources */,
 				9A90797D2022444700C380E9 /* Controller.cpp in Sources */,
+				9A90798420224DD100C380E9 /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
