@@ -29,7 +29,7 @@ public:
     Array<Type>(const Array<Type> & toReplace);
     
     //Destructor
-    Array<Type>();
+   ~Array<Type>();
     
     //Operators
     Array<Type> & operator = (const Array<Type> & toReplace);
@@ -40,7 +40,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-    
+};
     template <class Type>
     Array<Type> :: Array(int size)
     {
@@ -59,7 +59,7 @@ public:
         
         for(int index = 0; index < size; index++)
         {
-            internalArrray[index] = toCopy[index];
+            internalArray[index] = toCopy[index];
         }
     }
     template <class Type>
@@ -87,7 +87,7 @@ public:
     }
     //The Type refence is on the left size..Yuo can change the value if you change the refence...(sign)
     template <class Type>
-    type & Array<Type> :: operator [] (int index)
+    Type & Array<Type> :: operator [] (int index)
     {
         assert(index >= 0 && index < size);
         return internalArray[index];
@@ -118,7 +118,7 @@ public:
         assert(pos >= 0 && pos < size);
         internalArray[pos] = item;
     }
-}
+
 
 
 #endif /* Array_hpp */

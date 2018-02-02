@@ -72,5 +72,11 @@ void Controller :: findMaxAndMin()
 }
 void Controller :: testArray()
 {
+    Array<int>ryanArray(45);
+    
+    ryanArray[0] = 123;
+    ryanArray.setAtIndex(0, 321);
+    
+    cout << ryanArray[0] << endl;
     
 }
