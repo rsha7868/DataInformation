@@ -12,6 +12,7 @@ using namespace std;
 
 void Controller :: start()
 {
+    testArray();
     findMaxAndMin();
     Timer codeTimer;
     codeTimer.startTimer();
@@ -24,7 +25,7 @@ void Controller :: start()
     
     vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Data/crime.csv");
     
-    for(int index = 0; index < 216; index++)
+    for(int index = 0; index < 1000; index++)
     {
         cout << index << " is " << myData[index] << endl;
     }
@@ -66,5 +67,10 @@ void Controller :: findMaxAndMin()
     cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
     
     searchTimer.displayInformation();
+    
+    
+}
+void Controller :: testArray()
+{
     
 }

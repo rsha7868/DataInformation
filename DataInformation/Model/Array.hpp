@@ -85,12 +85,14 @@ public:
         }
         return *this;
     }
+    //The Type refence is on the left size..Yuo can change the value if you change the refence...(sign)
     template <class Type>
     type & Array<Type> :: operator [] (int index)
     {
         assert(index >= 0 && index < size);
         return internalArray[index];
     }
+    //(Copy)
     template <class Type>
     Type Array<Type> :: operator [] (int index) const
     {
