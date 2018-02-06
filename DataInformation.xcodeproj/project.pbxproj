@@ -12,6 +12,7 @@
 		9A9079812022473600C380E9 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797F2022473600C380E9 /* Timer.cpp */; };
 		9A90798420224DD100C380E9 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90798220224DD100C380E9 /* FileController.cpp */; };
 		9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90798A202253A800C380E9 /* CrimeData.cpp */; };
+		9A908BEB202A33B300CBEF3C /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A908BE9202A33B300CBEF3C /* ArrayTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		9A9079892022531100C380E9 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		9A90798A202253A800C380E9 /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		9A90798B202253B300C380E9 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		9A908BE9202A33B300CBEF3C /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
+		9A908BEA202A33B300CBEF3C /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		9A9079702022436800C380E9 /* DataInformation */ = {
 			isa = PBXGroup;
 			children = (
+				9A908BE8202A338F00CBEF3C /* Testers */,
 				9A6F4E5E2024EDFB00C9EF55 /* Model */,
 				9A907985202252AF00C380E9 /* Data */,
 				9A9079782022441100C380E9 /* Runner.cpp */,
@@ -116,6 +120,15 @@
 				9A9079892022531100C380E9 /* crime.csv */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		9A908BE8202A338F00CBEF3C /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				9A908BE9202A33B300CBEF3C /* ArrayTester.cpp */,
+				9A908BEA202A33B300CBEF3C /* ArrayTester.hpp */,
+			);
+			path = Testers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +192,7 @@
 				9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */,
 				9A9079792022441100C380E9 /* Runner.cpp in Sources */,
 				9A90797D2022444700C380E9 /* Controller.cpp in Sources */,
+				9A908BEB202A33B300CBEF3C /* ArrayTester.cpp in Sources */,
 				9A90798420224DD100C380E9 /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,7 +25,7 @@ void Controller :: start()
     
     vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Data/crime.csv");
     
-    for(int index = 0; index < 1000; index++)
+    for(int index = 0; index < 1; index++)
     {
         cout << index << " is " << myData[index] << endl;
     }
