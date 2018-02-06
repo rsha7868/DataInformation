@@ -52,7 +52,7 @@ void ArrayTester :: testAdvancedArray()
     
     vectorTimer.startTimer();
     cout << test[3425] << endl;
-    vectorTAimer.stopTimer();
+    vectorTimer.stopTimer();
     vectorTimer.displayInformation();
     
     arrayTimer.startTimer();
