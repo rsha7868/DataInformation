@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 #include "../../Nodes/LinearNode.hpp"
+virtual <class Type>
+class List
 {
 protected:
     int size;
