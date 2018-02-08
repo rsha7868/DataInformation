@@ -44,6 +44,8 @@
 		9A908BEA202A33B300CBEF3C /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		9A908BEE202A41B800CBEF3C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		9A908BF2202A46FC00CBEF3C /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		9AB4FBA5202CE1AA0081D8F5 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		9AB4FBA8202CE9D20081D8F5 /* Nodes and LinearNodes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nodes and LinearNodes.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +148,19 @@
 		9A908BF0202A469200CBEF3C /* LinearNode */ = {
 			isa = PBXGroup;
 			children = (
+				9AB4FBA3202CE1430081D8F5 /* Structures */,
 				9A908BF2202A46FC00CBEF3C /* LinearNode.hpp */,
 			);
 			path = LinearNode;
+			sourceTree = "<group>";
+		};
+		9AB4FBA3202CE1430081D8F5 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				9AB4FBA8202CE9D20081D8F5 /* Nodes and LinearNodes.png */,
+				9AB4FBA5202CE1AA0081D8F5 /* List.hpp */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
