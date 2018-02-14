@@ -10,7 +10,7 @@
 #define List_hpp
 
 #include <stdio.h>
-#include "../../Nodes/LinearNode.hpp"
+#include "LinearNode.hpp"
 virtual <class Type>
 class List
 {
