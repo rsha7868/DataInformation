@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A60A35E203CB8E0008C5701 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */; };
 		9A9079792022441100C380E9 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9079782022441100C380E9 /* Runner.cpp */; };
 		9A90797D2022444700C380E9 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797B2022444700C380E9 /* Controller.cpp */; };
 		9A9079812022473600C380E9 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797F2022473600C380E9 /* Timer.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		9A60A35D203CB8E0008C5701 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		9A6F4E612024EF0600C9EF55 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		9A90796E2022436800C380E9 /* DataInformation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataInformation; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9079782022441100C380E9 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 			children = (
 				9A908BE9202A33B300CBEF3C /* ArrayTester.cpp */,
 				9A908BEA202A33B300CBEF3C /* ArrayTester.hpp */,
+				9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */,
+				9A60A35D203CB8E0008C5701 /* LinkedListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -158,9 +163,9 @@
 		9AB4FBA3202CE1430081D8F5 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				9A9378B92034BF5700EED08C /* LinkedList.hpp */,
 				9AB4FBA8202CE9D20081D8F5 /* Nodes and LinearNodes.png */,
 				9AB4FBA5202CE1AA0081D8F5 /* List.hpp */,
-				9A9378B92034BF5700EED08C /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */,
 				9A9079792022441100C380E9 /* Runner.cpp in Sources */,
 				9A90797D2022444700C380E9 /* Controller.cpp in Sources */,
+				9A60A35E203CB8E0008C5701 /* LinkedListTester.cpp in Sources */,
 				9A908BEB202A33B300CBEF3C /* ArrayTester.cpp in Sources */,
 				9A90798420224DD100C380E9 /* FileController.cpp in Sources */,
 			);
