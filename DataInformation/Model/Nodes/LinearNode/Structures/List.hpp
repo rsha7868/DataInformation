@@ -11,7 +11,8 @@
 
 #include <stdio.h>
 #include "LinearNode.hpp"
-virtual <class Type>
+
+template <class Type>
 class List
 {
 protected:
@@ -19,8 +20,8 @@ protected:
 //Structure
 virtual void add(Type item) = 0;
 virtual void addAtIndex(int index, Type item) = 0;
-virtual void Type remove(int index) = 0;
-virtual void Type getFromIndex(int index) = 0;
+virtual Type remove(int index) = 0;
+virtual Type getFromIndex(int index) = 0;
 //Helper
 virtual int getSize() const = 0;
 virtual LinearNode<Type> * getFront() = 0;
