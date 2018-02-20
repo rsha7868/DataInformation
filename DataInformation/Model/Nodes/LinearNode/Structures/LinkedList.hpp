@@ -15,7 +15,7 @@ using namespace std; //Used for keyword access. Use this to make sure your point
 
 template <class Type>
 class LinkedList : public List<Type>
-
+{
 protected:
 LinearNode<Type> * front;
 LinearNode<Type> * end;
@@ -37,7 +37,7 @@ Type getFromIndex(int index);
 Type remove(int index);
 //Type setAtIndex(int index, Type item);
 //Type contains(Type item);
-
+};
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
@@ -100,6 +100,22 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
         }
         this->size++;
     }
+}
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
 }
 
 Type LinkedList<Type> :: remove(int index)
