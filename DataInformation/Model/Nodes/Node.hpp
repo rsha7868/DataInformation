@@ -10,6 +10,7 @@
 #define Node_hpp
 
 template <class Type>
+class Node
 {
 protected:
     Type data;
@@ -27,7 +28,7 @@ Node<Type> :: Node()
 template <class Type>
 void Node<Type> :: setData(Type data)
 {
-    this-> = data;
+    this->data = data;
 }
 template <class Type>
 Type Node<Type> :: getData()

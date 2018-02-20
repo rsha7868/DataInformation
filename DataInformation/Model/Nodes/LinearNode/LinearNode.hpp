@@ -23,7 +23,7 @@ public:
     LinearNode(Type data, LinearNode<Type> * next);
     
     //Methods
-    void setNextNode(<Type> * next);
+    void setNextNode(LinearNode<Type> * next);
     LinearNode<Type> * getNextNode();
 };
 //Contructors
@@ -47,7 +47,7 @@ LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
  This constructor is used to create a reference to a instance with data and known link.
  */
 template <class Type>
-LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : node<Type>(data)
+LinearNode<Type> :: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
 {
     this->next = next;
 }
