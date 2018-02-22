@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9A60A35E203CB8E0008C5701 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */; };
-		9A6F25DC203F4A2100BBBB06 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6F25DA203F4A2100BBBB06 /* Stack.cpp */; };
 		9A9079792022441100C380E9 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9079782022441100C380E9 /* Runner.cpp */; };
 		9A90797D2022444700C380E9 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797B2022444700C380E9 /* Controller.cpp */; };
 		9A9079812022473600C380E9 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797F2022473600C380E9 /* Timer.cpp */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		9A60A35D203CB8E0008C5701 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
-		9A6F25DA203F4A2100BBBB06 /* Stack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
 		9A6F25DB203F4A2100BBBB06 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		9A6F4E612024EF0600C9EF55 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		9A90796E2022436800C380E9 /* DataInformation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataInformation; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				9A908BF2202A46FC00CBEF3C /* LinearNode.hpp */,
-				9A908BF0202A469200CBEF3C /* Structures */,
 				9A908BEE202A41B800CBEF3C /* Node.hpp */,
+				9A908BF0202A469200CBEF3C /* Structures */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -169,7 +167,6 @@
 				9A9378B92034BF5700EED08C /* LinkedList.hpp */,
 				9AB4FBA8202CE9D20081D8F5 /* Nodes and LinearNodes.png */,
 				9AB4FBA5202CE1AA0081D8F5 /* List.hpp */,
-				9A6F25DA203F4A2100BBBB06 /* Stack.cpp */,
 				9A6F25DB203F4A2100BBBB06 /* Stack.hpp */,
 			);
 			path = Linear;
@@ -232,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6F25DC203F4A2100BBBB06 /* Stack.cpp in Sources */,
 				9A9079812022473600C380E9 /* Timer.cpp in Sources */,
 				9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */,
 				9A9079792022441100C380E9 /* Runner.cpp in Sources */,
