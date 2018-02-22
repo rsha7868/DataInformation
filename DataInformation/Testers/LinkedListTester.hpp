@@ -10,7 +10,7 @@
 #define LinkedListTester_hpp
 
 #include <iostream>
-#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/LinearNode/Structures/LinkedList.hpp"
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/Structures/Linear/LinkedList.hpp"
 #include "../../Controller/FileController.hpp"
 #include "../../Data/CrimeData.hpp"
 #include "../Controller/Tools/Timer.hpp"

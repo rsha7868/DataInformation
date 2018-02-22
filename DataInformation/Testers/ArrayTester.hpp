@@ -10,7 +10,7 @@
 #define ArrayTester_hpp
 
 #include <iostream>
-#include "../Model/Array.hpp"
+#include "../Model/Nodes/Structures/Linear/Array.hpp"
 #include "../Controller/FileController.hpp"
 #include "../Controller/Tools/Timer.hpp"
 

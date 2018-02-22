@@ -9,7 +9,7 @@
 #ifndef List_hpp
 #define List_hpp
 
-#include <stdio.h>
+#include <assert.h>
 #include "LinearNode.hpp"
 
 template <class Type>

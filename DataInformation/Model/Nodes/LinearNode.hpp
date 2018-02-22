@@ -9,7 +9,7 @@
 #ifndef LinearNode_hpp
 #define LinearNode_hpp
 
-#include "../Node.hpp"
+#include "Node.hpp"
 
 template <class Type>
 class LinearNode : public Node<Type>

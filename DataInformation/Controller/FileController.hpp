@@ -32,9 +32,9 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
     LinkedList<CrimeData> crimes;
     string currentCSVLine;
     int rowCount = 0;
-    
+
     ifstream dataFile(fileName);
-    
+
     //If the File exist at that path.
     if(dataFile.is_open())
     {
