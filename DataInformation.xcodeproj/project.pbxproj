@@ -52,6 +52,7 @@
 		9A9378B92034BF5700EED08C /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		9AB4FBA5202CE1AA0081D8F5 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		9AB4FBA8202CE9D20081D8F5 /* Nodes and LinearNodes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nodes and LinearNodes.png"; sourceTree = "<group>"; };
+		9AFFB0ED20448FA000D419E6 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 		9A908BEC202A418A00CBEF3C /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				9AFFB0ED20448FA000D419E6 /* DoubleNode.hpp */,
 				9A908BF2202A46FC00CBEF3C /* LinearNode.hpp */,
 				9A908BEE202A41B800CBEF3C /* Node.hpp */,
 				9A908BF0202A469200CBEF3C /* Structures */,
