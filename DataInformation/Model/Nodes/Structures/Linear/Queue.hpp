@@ -108,7 +108,7 @@ template <class Type>
 Type Queue<Type> peek()
 {
     assert(this->size > 0)
-    reeturn this->getFront()->getData();
+    return this->getFront()->getData();
 }
 template <class Type>
 Type Queue<Type> :: getFromIndex(int index)
