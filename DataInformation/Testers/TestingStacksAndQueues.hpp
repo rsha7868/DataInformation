@@ -9,13 +9,23 @@
 #ifndef TestingStacksAndQueues_hpp
 #define TestingStacksAndQueues_hpp
 
-#include "";
-#include "";
-#include "";
-#include "";
-#include "";
-#include <iostream>;
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Controller/Tools/Timer.cpp"
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Controller/FileController.hpp"
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/Structures/Linear/Queue.hpp"
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/Structures/Linear/Stack.hpp"
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/Structures/Linear/List.hpp"
+#include <iostream>
 
 using namespace std;
+
+class TestingStacksAndQueues
+{
+public:
+    void stackVersusList;
+    void stackVersusQueue;
+    void queueVersusList;
+};
+    
+
 
 #endif /* TestingStacksAndQueues_hpp */

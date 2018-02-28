@@ -1,4 +1,5 @@
-//
+
+/
 //  Stack.hpp
 //  DataInformation
 //
@@ -17,12 +18,12 @@ class Stack : public LinkedList<Type>
 public:
     Stack();
     ~Stack();
-    
+
     //Stack specific methods
     void push(Type data);
     Type pop();
     Type peek();
-    
+
     //Overriden LinkedList methods
     void add(Type data);
     void addAtIndex(int index, Type data);
@@ -48,7 +49,7 @@ template <class Type>
 void Stack<Type> :: push(Type data)
 {
     LinearNode<Type> * add = new LinearNode<Type>(data)
-    
+
     if(this->size == 0)
     {
         this->end = add;
@@ -57,7 +58,7 @@ void Stack<Type> :: push(Type data)
     {
         add->setNextNode(this->front);
     }
-    
+
     this->front = add;
     this->size++;
 }
@@ -77,11 +78,11 @@ Type Stack<Type> :: pop()
 {
     assert(this->size > 0);
     Type remove = this->front->getData();
-    
+
     LinearNode<Type> * removeNode = this->getFront();
     this->front = removeNode->getNextNode();
     delete removeNode;
-    
+
     this->size--;
     return removed;
 }
@@ -105,3 +106,4 @@ Type Stack<Type> :: getFromIndex(int index)
 }
 
 #endif /* Stack_hpp */
+

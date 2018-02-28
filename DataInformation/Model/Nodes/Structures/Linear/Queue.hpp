@@ -16,7 +16,8 @@ using namespace std;
 template <class Type>
 class Queue : public LinkedList<Type>
 {
-    public Queue();
+public:
+    Queue();
     ~Queue();
     
    //Queue methods
@@ -41,10 +42,10 @@ Queue<Type> :: Queue() : LinkedList<Type>()
 template <class Type>
 Queue<Type> :: ~Queue()
 {
-    for(LinearNode<Type> * remove = this->front; removed != nullptr;removed = this->front)
+    for(LinearNode<Type> * remove = this->front; remove != nullptr;remove = this->front)
     {
-        this->front = remove->getNextNode()
-        delete removed;
+        this->front = remove->getNextNode();
+        delete remove;
     }
 }
 template <class Type>
@@ -90,7 +91,7 @@ Type Queue<Type> :: dequeue()
     
     return returned;
 }
-template <class> Type>
+template <class Type>
 Type Queue<Type> :: remove(int index)
 {
     assert(index == 0);
