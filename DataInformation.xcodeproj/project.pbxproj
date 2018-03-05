@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A301CB5204DC5740077AF97 /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A301CB3204DC5740077AF97 /* RecursionTester.cpp */; };
 		9A60A35E203CB8E0008C5701 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */; };
 		9A9079792022441100C380E9 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9079782022441100C380E9 /* Runner.cpp */; };
 		9A90797D2022444700C380E9 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A90797B2022444700C380E9 /* Controller.cpp */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A301CB3204DC5740077AF97 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
+		9A301CB4204DC5740077AF97 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 		9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		9A60A35D203CB8E0008C5701 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		9A6F25DB203F4A2100BBBB06 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				9A60A35D203CB8E0008C5701 /* LinkedListTester.hpp */,
 				9AEE9FC420473F96000060EE /* TestingStacksAndQueues.cpp */,
 				9AEE9FC520473F96000060EE /* TestingStacksAndQueues.hpp */,
+				9A301CB3204DC5740077AF97 /* RecursionTester.cpp */,
+				9A301CB4204DC5740077AF97 /* RecursionTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A301CB5204DC5740077AF97 /* RecursionTester.cpp in Sources */,
 				9A9079812022473600C380E9 /* Timer.cpp in Sources */,
 				9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */,
 				9A9079792022441100C380E9 /* Runner.cpp in Sources */,

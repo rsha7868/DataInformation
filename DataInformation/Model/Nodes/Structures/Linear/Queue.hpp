@@ -59,11 +59,11 @@ void Queue<Type> :: enqueue(Type item)
     }
     else
     {
-        this-end->setNextNode(added);
+        this->end->setNextNode(added);
     }
     
     this->end = added;
-    this-size++;
+    this->size++;
 }
 template <class Type>
 void Queue<Type> :: addAtIndex(int index, Type item)
