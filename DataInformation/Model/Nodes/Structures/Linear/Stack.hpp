@@ -1,5 +1,5 @@
 
-/
+//
 //  Stack.hpp
 //  DataInformation
 //
@@ -48,7 +48,7 @@ Stack<Type> :: ~Stack()
 template <class Type>
 void Stack<Type> :: push(Type data)
 {
-    LinearNode<Type> * add = new LinearNode<Type>(data)
+    LinearNode<Type> * add = new LinearNode<Type>(data);
 
     if(this->size == 0)
     {
@@ -73,11 +73,11 @@ void Stack<Type> :: addAtIndex(int index, Type data)
     assert(index == 0);
     push(data);
 }
-tempalte <class Type>
+template <class Type>
 Type Stack<Type> :: pop()
 {
     assert(this->size > 0);
-    Type remove = this->front->getData();
+    Type removed = this->front->getData();
 
     LinearNode<Type> * removeNode = this->getFront();
     this->front = removeNode->getNextNode();

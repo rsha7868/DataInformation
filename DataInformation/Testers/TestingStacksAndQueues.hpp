@@ -16,16 +16,16 @@
 #include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/Structures/Linear/List.hpp"
 #include <iostream>
 
-using namespace std;
+//using namespace std;
+//
+//class TestingStacksAndQueues
+//{
+//public:
+//    void stackVersusList;
+//    void stackVersusQueue;
+//    void queueVersusList;
+//};
 
-class TestingStacksAndQueues
-{
-public:
-    void stackVersusList;
-    void stackVersusQueue;
-    void queueVersusList;
-};
-    
 
 
 #endif /* TestingStacksAndQueues_hpp */
