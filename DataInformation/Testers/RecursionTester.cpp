@@ -54,12 +54,12 @@ void RecursionTester :: testRecursionString()
 }
 string RecursionTester :: food(string word)
 {
-    if(word.length() == -1)
+    if(word.length() == 1)
     {
         return word;
     }
     else
     {
-        return word + food(word.substr(0,word.length() - 5));
+        return word + food(word.substr(0,word.length() - 4));
     }
 }
