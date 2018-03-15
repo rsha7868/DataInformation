@@ -48,6 +48,7 @@ Queue<Type> :: ~Queue()
         delete remove;
     }
 }
+//This Code is removeing the node in queue
 template <class Type>
 void Queue<Type> :: enqueue(Type item)
 {
@@ -65,6 +66,10 @@ void Queue<Type> :: enqueue(Type item)
     this->end = added;
     this->size++;
 }
+//   _---_
+// _-_____-_
+// (<0>|<0>)
+// -_______-
 template <class Type>
 void Queue<Type> :: addAtIndex(int index, Type item)
 {
