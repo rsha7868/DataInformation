@@ -46,4 +46,35 @@ public:
     int costTraversal(Graph<Type> & graph, int vertex);
 };
 
+template <class Type>
+const int Graph<Type> :: MAXINUM;
+
+template <Class Type>
+Graph<Type> :: Graph()
+{
+    this->vertexCount = 0;
+}
+/*
+ Since we cannot "Remove" from an array in C++,
+ we only implement adding to a graph.
+ Java allows for all objects to be set to null but C++
+ does not.
+*/
+
+//Left side operator (Referenace of value)
+template <class Type>
+int Graph<Type> :: size() const
+{
+    assert(vertex < vertexCount);
+    return graphData[vertex];
+}
+
+//Right hand side operator (Copy of value.)
+template <class Type>
+Type Graph<Type> :: operator[](int vertex) const
+{
+    assert(vertex < vertexCount);
+    return graphData[vertex];
+}
+
 #endif /* Graph_hpp */
