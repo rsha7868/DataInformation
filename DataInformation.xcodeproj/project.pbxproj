@@ -39,6 +39,7 @@
 		9A6F25DB203F4A2100BBBB06 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		9A6F25DE203F511A00BBBB06 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		9A6F4E612024EF0600C9EF55 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		9A77B9002060369000D52B56 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		9A90796E2022436800C380E9 /* DataInformation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataInformation; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9079782022441100C380E9 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		9A90797B2022444700C380E9 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -82,6 +83,14 @@
 				9A908BEC202A418A00CBEF3C /* Nodes */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9A77B8FB2060360600D52B56 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				9A77B9002060369000D52B56 /* Graph.hpp */,
+			);
+			path = NonLinear;
 			sourceTree = "<group>";
 		};
 		9A9079652022436800C380E9 = {
@@ -182,6 +191,7 @@
 		9AB4FBA3202CE1430081D8F5 /* Linear */ = {
 			isa = PBXGroup;
 			children = (
+				9A77B8FB2060360600D52B56 /* NonLinear */,
 				9A6F4E612024EF0600C9EF55 /* Array.hpp */,
 				9A9378B92034BF5700EED08C /* LinkedList.hpp */,
 				9AB4FBA8202CE9D20081D8F5 /* Nodes and LinearNodes.png */,
