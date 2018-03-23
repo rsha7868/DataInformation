@@ -16,6 +16,7 @@
 #include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Model/Nodes/Structures/Linear/Array.hpp"
 #include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Testers/ArrayTester.hpp"
 #include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Testers/RecursionTester.hpp"
+#include "/Users/rsha7868/C++-WorkSpace/DataInformation/DataInformation/Testers/GraphTester.hpp"
 
 class Controller
 {

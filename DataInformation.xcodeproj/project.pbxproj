@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A287AD42065722C00B35C5C /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A287AD22065722C00B35C5C /* GraphTester.cpp */; };
 		9A301CB5204DC5740077AF97 /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A301CB3204DC5740077AF97 /* RecursionTester.cpp */; };
 		9A60A35E203CB8E0008C5701 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */; };
 		9A9079792022441100C380E9 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A9079782022441100C380E9 /* Runner.cpp */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A287AD22065722C00B35C5C /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		9A287AD32065722C00B35C5C /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		9A301CB3204DC5740077AF97 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		9A301CB4204DC5740077AF97 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 		9A60A35C203CB8E0008C5701 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				9A301CB4204DC5740077AF97 /* RecursionTester.hpp */,
 				9AE32799205AE955004D67C8 /* SortingTester.cpp */,
 				9AE3279A205AE955004D67C8 /* SortingTester.hpp */,
+				9A287AD22065722C00B35C5C /* GraphTester.cpp */,
+				9A287AD32065722C00B35C5C /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				9A90798C2022573E00C380E9 /* CrimeData.cpp in Sources */,
 				9A9079792022441100C380E9 /* Runner.cpp in Sources */,
 				9A90797D2022444700C380E9 /* Controller.cpp in Sources */,
+				9A287AD42065722C00B35C5C /* GraphTester.cpp in Sources */,
 				9AE3279B205AE955004D67C8 /* SortingTester.cpp in Sources */,
 				9A60A35E203CB8E0008C5701 /* LinkedListTester.cpp in Sources */,
 				9AEE9FC620473F96000060EE /* TestingStacksAndQueues.cpp in Sources */,

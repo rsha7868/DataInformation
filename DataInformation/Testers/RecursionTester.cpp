@@ -47,19 +47,20 @@ void RecursionTester :: testRecursionString()
     cout << mystery("car") << endl;
     cout << mystery("apple") << endl;
     
-    cout << food("pizza") << endl;
-    cout << food("santa") << endl;
-    cout << food("people") << endl;
-    cout << food("blood") << endl;
+//    cout << food("pizza") << endl;
+//    cout << food("santa") << endl;
+//    cout << food("people") << endl;
+//    cout << food("blood") << endl;
 }
-string RecursionTester :: food(string word)
-{
-    if(word.length() == 1)
-    {
-        return word;
-    }
-    else
-    {
-        return word + food(word.substr(0,word.length() - 4));
-    }
-}
+//string RecursionTester :: food(string word)
+//{
+//    if(word.length() == 1)
+//    {
+//        return word;
+//    }
+//    else
+//    {
+//        return word + food(word.substr(0,word.length() - 4));
+//    }
+//}
+
