@@ -24,13 +24,13 @@ public:
     BinaryTreeNode(Type data);
     
     //Methods
-    BinaryTreeNode<Type> * getRootNode;
-    BinaryTreeNode<Type> * getLeftNode;
-    BinaryTreeNode<Type> * getRightNode;
+    BinaryTreeNode<Type> * getRoot();
+    BinaryTreeNode<Type> * getLeft();
+    BinaryTreeNode<Type> * getRight();
     
-    void setRootNode(BinaryTreeNode<Type>*)
-    void setLeftNode(BinaryTreeNode<Type>*)
-    void setRightNode(BinaryTreeNode<Type>*)
+    void setRootNode(BinaryTreeNode<Type> * root);
+    void setLeftNode(BinaryTreeNode<Type> * left);
+    void setRightNode(BinaryTreeNode<Type> * right);
     
     
 };
@@ -57,19 +57,19 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : getRootNode<Type>()
+BinaryTreeNode<Type> * BinaryTreeNode <Type> :: getRoot()
 {
     return this->root;
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : getRightNode<Type>()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
 {
     return this->right;
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : getLeftNode<Type>()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
 {
     return this->left;
 }
@@ -77,22 +77,7 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : getLeftNode<Type>()
 /**
  This constructor is used to create a reference to a instance with data and known link.
  */
-template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data, BinaryTreeNode<Type> * next) : Node<Type>(data)
-{
-    this->next = next;
-}
-//Accessor Methods
-template <class Type>
-void BinaryTreeNode<Type> :: setNextNode(BinaryTreeNode<Type> * nextNodePointer )
-{
-    this->next = nextNodePointer;
-}
-template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getNextNode()
-{
-    return next;
-}
+
 
 
 #endif /* BinaryTreeNode_hpp */
