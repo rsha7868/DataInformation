@@ -73,6 +73,7 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : getLeftNode<Type>()
 {
     return this->left;
 }
+
 /**
  This constructor is used to create a reference to a instance with data and known link.
  */
