@@ -42,7 +42,7 @@ public:
     void preOrderTraversal();
     void postOrderTraversal();
     void demoTraversalSteps(BinaryTreeNode<Type> * start);
-   //void demo();
+    void demo();
     
     int getSize();
     int getHeight();
@@ -61,11 +61,11 @@ BinarySearchTree<Type> :: BinarySearchTree()
 {
     this->root = nullptr;
 }
-//template <class Type>
-//void BinarySearchTree<Type :: demo()
-//{
-//    demoTraversalSteps(this->root);
-//}
+template <class Type>
+void BinarySearchTree<Type :: demo()
+{
+    demoTraversalSteps(this->root);
+}
 template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
@@ -110,20 +110,6 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
             
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 template <class Type>
 int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * current)
 {
@@ -161,7 +147,7 @@ bool BinarySearchTree<Type>  :: isBalanced(BinaryTreeNode<Type> * current)
     bool leftBalanced = isBalanced(current->getLeftNode());
     bool rightBalanced = isBalanced(current->getRightNode());
     
-    if(heightDiffenerce <= 1 && leftBalanced && rightBalanced)
+    if(heightDifference <= 1 && leftBalanced && rightBalanced)
     {
         return true;
     }
@@ -195,7 +181,20 @@ void BinarySearchTree<Type>  :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 template <class Type>
 void BinarySearchTree<Type>  :: preOrderTraversal(BinaryTreeNode<Type> * preStart)
 {
-    preOrderTraversal(this->root);
+    if(preStart != nullptr)
+    {
+        preOrderTraversal(preStart->getLeftNode());
+        cout << preStart->getData() << endl;
+        preOrderTraversal(preStart->getRightNode());
+    }
+    
+}
+template <class Type>
+void postOrderTraversal(BinaryTreeNode<Type> * postStart)
+{
+    postOrderTraversal(postStart->getLeftNode());
+    cout << postStart->getData() << endl;
+    postOrderTraversal(postStart->getRightNode());
 }
 template <class Type>
  BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current)
@@ -310,16 +309,4 @@ Type BinarySearchTree<Type>  :: findMaximum()
 {
     return type;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 #endif /* BinarySearchTree_hpp */
