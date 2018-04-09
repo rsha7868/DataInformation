@@ -20,7 +20,7 @@ protected:
     int calculateSize(BinaryTreeNode<Type> * current);
     int calculateHeight(BinaryTreeNode<Type> * current);
     bool isBalanced(BinaryTreeNode<Type> * current);
-    bool isComplete(BinaryTreeNode<Type> * current, int index, int size);
+    bool isComplete(BinaryTreeNode<Type> * startNode, int index, int size);
     
     void inOrderTraversal(BinaryTreeNode<Type> * inStart);
     void preOrderTraversal(BinaryTreeNode<Type> * preStart);
@@ -161,19 +161,25 @@ bool BinarySearchTree<Type>  :: isBalanced(BinaryTreeNode<Type> * current)
     bool leftBalanced = isBalanced(current->getLeftNode());
     bool rightBalanced = isBalanced(current->getRightNode());
     
-    if(heightDiffenerce)
-    
-    
-    
-    
-    
+    if(heightDiffenerce <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
     
     return false;
 }
 template <class Type>
 bool BinarySearchTree<Type>  :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
 {
-    return false;
+    if(startNode == nullptr)
+    {
+        return true;
+    }
+    if(index >= size)
+    {
+       return false;
+    }
+    return (isComplete(startNode(), 2 * index + 1, size) && isComplete(startNode->getRightNode(), 2 * index + 2, size));
 }
 template <class Type>
 void BinarySearchTree<Type>  :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
@@ -264,7 +270,10 @@ void BinarySearchTree<Type>  :: remove(Type value)
 template <class Type>
 bool BinarySearchTree<Type>  :: isComplete()
 {
-    return false;
+    int index = 0;
+    int size = getSize();
+    
+    return isComplete(this->root, index, size);
 }
 template <class Type>
 bool BinarySearchTree<Type>  :: isBalanced()
