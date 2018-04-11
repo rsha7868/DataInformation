@@ -6,25 +6,25 @@
 //  Copyright © 2018 Sharp, Ryan. All rights reserved.
 //
 
-//#include "BinaryTreeTester.hpp"
+#include "BinaryTreeTester.hpp"
 
-//void BinaryTreeTester :: doTreeStuff()
-//{
-//    testTree.insert(3);
-//    testTree.insert(1);
-//    testTree.insert(2);
-//    testTree.insert(-3246000);
-//    testTree.insert(-12);
-//    testTree.insert(7);
-//    testTree.insert(5);
-//    testTree.insert(6);
-//    testTree.insert(8);
-//    testTree.insert(5000);
-//    testTree.insert(9001);
-//    testTree.insert(10);
-//    testTree.insert(400);
-//
-//    testTree.demo();
-//    testTree.inOrderTraversal();
-//}
+void BinaryTreeTester :: doTreeStuff()
+{
+    testTree.insert(3);
+    testTree.insert(1);
+    testTree.insert(2);
+    testTree.insert(-3246000);
+    testTree.insert(-12);
+    testTree.insert(7);
+    testTree.insert(5);
+    testTree.insert(6);
+    testTree.insert(8);
+    testTree.insert(5000);
+    testTree.insert(9001);
+    testTree.insert(10);
+    testTree.insert(400);
+
+    testTree.demo();
+    testTree.inOrderTraversal();
+}
 
