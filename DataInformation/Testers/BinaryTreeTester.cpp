@@ -27,4 +27,3 @@ void BinaryTreeTester :: doTreeStuff()
     testTree.demo();
     testTree.inOrderTraversal();
 }
-

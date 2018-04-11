@@ -15,9 +15,11 @@
 class BinaryTreeTester
 {
 private:
+   // BinaryTreeNode<int> testNode;
+   // BinarySearchTree<string> testStringTree;
     BinarySearchTree<int> testTree;
 public:
-    void doStuff();
+    void doTreeStuff();
 };
 #endif /* BinaryTreeTester_hpp */
 
