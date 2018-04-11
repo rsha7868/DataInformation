@@ -142,7 +142,7 @@ bool BinarySearchTree<Type>  :: isBalanced(BinaryTreeNode<Type> * current)
     
     leftHeight = calculateHeight(current->getLeftNode());
     rightHeight = calculateHeight(current->getRightNode());
-    
+
     int heightDifference = abs(leftHeight - rightHeight);
     bool leftBalanced = isBalanced(current->getLeftNode());
     bool rightBalanced = isBalanced(current->getRightNode());
@@ -209,13 +209,25 @@ BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current)
 template <class Type>
 void BinarySearchTree<Type>  :: removeNode(BinaryTreeNode<Type> * removeMe)
 {
+    BinaryTreeNode<Type> * current;
+    BinaryTreeNode<Type> * previous;
+    BinaryTreeNode<Type> * temp;
     
+    previous = removeMe->getRootNode();
+    
+    //Node is Leaf - has no kiddos
+    
+    if(removeMe->getRightNode() == nullptr && removeMe->getLeftNode() == nullptr)
+    {
+        temp = removeMe;
+        removeMe = nullptr;
+        if(previous != nullptr && removeMe->)
 }
 
 template <class Type>
 BinarySearchTree<Type>  :: ~BinarySearchTree()
 {
-    
+    destroyTree(this->root);
 }
 template <class Type>
 BinaryTreeNode<Type>*  BinarySearchTree<Type> :: getRoot()
@@ -261,9 +273,57 @@ void BinarySearchTree<Type>  :: demoTraversalSteps(BinaryTreeNode<Type> * start)
 
 
 template <class Type>
-void BinarySearchTree<Type>  :: remove(Type value)
+void BinarySearchTree<Type>  :: remove(Type getRidOfMe)
 {
-    
+    if(this->root == nullptr)
+    {
+        cout << "Empty tree so removal is not possible" << endl;
+    }
+    else
+    {
+        BinaryTreeNode<Type> * current = this->root;
+        BinaryTreeNode<Type> * previous = nullptr;
+        bool hasbeenFound = false;
+        
+        while(current != nullptr && !hasBeenFound)
+        {
+            if(current->getData() == getRidOfMe)
+            {
+                hasBeenFound = true;
+            }
+            else
+            {
+                previous = current;
+                if(getRidOfMe < current->getData())
+                {
+                    current = current->getLeftNode();
+                }
+                else
+                {
+                    current = current->getRightNode();
+                }
+            }
+        }
+        if(current == nullptr)
+        {
+            cerr << "Item not found, removal unsuccessful" << endl;
+        }
+        else if(hasBeenFound)
+        {
+            if(current == this->root)
+            {
+                removeNode(this->root);
+            }
+            else if(getRidOfMe < previous->getData())
+            {
+                removeNode(previous->getLeftNode());
+            }
+            else
+            {
+                removeNode(previous->getRightNode());
+            }
+        }
+    }
 }
 
 template <class Type>
@@ -280,9 +340,34 @@ bool BinarySearchTree<Type>  :: isBalanced()
     return false;
 }
 template <class Type>
-bool BinarySearchTree<Type>  :: contains(Type value)
+bool BinarySearchTree<Type>  :: contains(Type itemToFind)
 {
+    BinaryTreeNode<Type> * current = this->root;
+    if(current == nullptr)
+    {
     return false;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            if(itemToFind == current->getData())
+            {
+                return true;
+            }
+            else if(itemToFind < current->getData())
+            {
+                current = current->getLeftNode();
+            }
+            else
+            {
+                current = current->getRightNode();
+            }
+        }
+        return false;
+    }
+}
+
 }
 
 template <class Type>
