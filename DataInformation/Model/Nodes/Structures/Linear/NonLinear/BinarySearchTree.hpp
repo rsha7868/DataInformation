@@ -449,7 +449,7 @@ Type BinarySearchTree<Type>  :: findMinimum()
 {
     assert(this->root != nullptr);
     return getLeftMostChild(this->root)->getData();
-
+}
 template <class Type>
 Type BinarySearchTree<Type>  :: findMaximum()
 {
