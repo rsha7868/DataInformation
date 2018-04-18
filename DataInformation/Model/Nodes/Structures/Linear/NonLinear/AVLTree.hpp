@@ -192,6 +192,5 @@ BinaryTreeNode<Type> * AVLTree<Type> :: insertNode(BinaryTreeNode<Type> * parent
     }
     return parent;
 }
-                                                
-
+                                            
 #endif /* AVLTree_hpp */
