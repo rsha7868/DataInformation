@@ -10,14 +10,14 @@
 #define N_AryTreeNode_hpp
 
 #include <vector>
-#include "node.hpp"
+#include "Node.hpp"
 using namespace std;
 
 template <class Type>
 class N_AryTreeNode : public Node<Type>
 {
 private:
-    Vector<N_AryTreeNode<Type>*> nodes;
+    vector<N_AryTreeNode<Type>*> nodes;
     N_AryTreeNode<Type> * root;
 public:
     N_AryTreeNode<Type>();
@@ -55,12 +55,12 @@ N_AryTreeNode<Type> * N_AryTreeNode<Type> :: getRoot()
     return root;
 }
 template <class Type>
-N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
+vector<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
 {
     return nodes;
 }
 template <class Type>
-int<N_AryTreeNode<Type> :: getChildCount()
+int N_AryTreeNode<Type> :: getChildCount()
 {
     return nodes.size();
 }
