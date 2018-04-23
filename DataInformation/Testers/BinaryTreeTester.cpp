@@ -6,7 +6,7 @@
 //  Copyright © 2018 Sharp, Ryan. All rights reserved.
 //
 
-#include "BinaryTreeTester.hpp"
+//#include "BinaryTreeTester.hpp"
 
 //void BinaryTreeTester :: doTreeStuff()
 //{
