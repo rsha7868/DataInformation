@@ -327,10 +327,10 @@ void BinarySearchTree<Type>  :: demoTraversalSteps(BinaryTreeNode<Type> * start)
         cout << "to root" << endl;
         cout << "check if right is here" << endl;
         demoTraversalSteps(start->getRightNode());
-        else
-        {
+    }
+    else
+    {
             cout << "reached nullptr - if on right its back up the recursive cell stack" << endl;
-        }
     }
 }
 
@@ -457,7 +457,7 @@ Type BinarySearchTree<Type>  :: findMaximum()
     return getRightMostChild(this->root)->getData();
 }
 template <class Type>
-BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
 {
     if(node != nullptr)
     {
