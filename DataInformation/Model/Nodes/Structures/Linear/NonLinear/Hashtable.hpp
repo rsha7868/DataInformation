@@ -11,6 +11,9 @@
 
 
 #include "../Nodes/HashNode.hpp"
+#include <cmath>
+#include <assert.h>
+
 
 template <class Type>
 class Hashtable
@@ -33,6 +36,9 @@ public:
     
     void insert(Type data);
     long getSize();
+    
+    HashNode<Type> * get(long index);
+    bool contains(HashNode<Type> * value);
 };
 
 template <class Type>
@@ -51,9 +57,32 @@ Hashtable<Type> :: ~Hashtable()
 }
 
 template <class Type>
-Hashtable<Type> :: isPrime(long current)
+bool Hashtable<Type> :: isPrime(long current)
 {
-    return false;
+    if(current <= 1)
+    {
+        return false;
+    }
+    else if(current == 2 || current == 3)
+    {
+        return true;
+    }
+    else if(current % 2 == 0)
+    {
+        return false;
+    }
+    else
+    {
+        
+        for(int next = 3; next <= sqrt(current) +1; next += 2)
+        {
+            if(current % next == 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }
 
 template <class Type>
@@ -91,7 +120,13 @@ long Hashtabl<Type> :: getSize()
 template <class Type>
 long Hashtable<Type> :: getNextPrime()
 {
+    long nextPrime = (this->capacity * 2) + 1;
     
+    while(!isPrime(nextPrime))
+    {
+        nextPrime += 2;
+    }
+    return nextPrime;
 }
 
 template <class Type>
@@ -120,37 +155,54 @@ void Hashtable<Type> :: resize()
                 long updatePosition = handleCollision(position);
                 if(tempStorage[updatePosition] = temp;
                    }
-       }
-   }
+                   }
+                   }
                    internalStorage = tempStorage;
-}
+                   }
+                   
+                   template <class Type>
+                   void Hashtable<Type> :: insert(Type value)
+                {
+                    this->size++;
+                    if(((this->size * 1.000) / this->capacity) > this->loadFactor)
+                    {
+                        resize();
+                    }
+                    HashNode<Type> * temp = new HashNode<Type>(value);
+                    long index = findPosition(temp);
+                    
+                    if(internalStorage[index] == nullptr)
+                    {
+                        internalStorage[index] = temp;
+                    }
+                    else
+                    {
+                        long updatedPosition = handleCollision(index);
+                        if(updatedPosition != -1)
+                        {
+                            internal[updatedPosition] = temp;
+                        }
+                    }
+                }
+                   
+                   template <class Type>
+                   HashNode<Type> * Hashtable<Type> :: get(long index)
+                {
+                    assert(index <capacity);
+                    return internalStorage[index];
+                }
+                   template <class Type>
+                   bool Hashtable<Type> :: contains(HashNode<Type> * value)
+                {
+                    if(internalStorage[findPosition(value)->getData() == value->getData()]
+                       {
+                           return true;
+                       }
+                       long other = handleCollision(findPosition(value));
+                       if(internalStorage[other]->getData() == value->getData())
+                       {
+                           return true;
+                       }
+                       return false;
+                       }
 
-template <class Type>
-void Hashtable<Type> :: insert(Type value)
-{
-    this->size++;
-    if(((this->size * 1.000) / this->capacity) > this->loadFactor)
-    {
-        resize();
-    }
-    HashNode<Type> * temp = new HashNode<Type>(value);
-    long index = findPosition(temp);
-    
-    if(internalStorage[index] == nullptr)
-    {
-        internalStorage[index] = temp;
-    }
-    else
-    {
-        long updatedPosition = handleCollision(index);
-        if(updatedPosition != -1)
-        {
-            internal[updatedPosition] = temp;
-        }
-    }
-}
-
-
-
-
-#endif /* Hashtable_hpp */
