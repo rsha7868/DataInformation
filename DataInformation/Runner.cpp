@@ -12,4 +12,7 @@ int main()
     Controller app;
     app.start();
     return 0;
+    int i;
+    int o = 5;
+    return i = i + o;
 }
